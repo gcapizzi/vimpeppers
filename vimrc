@@ -75,6 +75,14 @@ set list listchars=tab:»·,trail:·
 set wildmode=list:longest
 set wildmenu
 
+" Colors =====================================================================
+
+syntax on
+set background=dark
+if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
+    colorscheme solarized
+endif
+
 " Scrolling ==================================================================
 
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
