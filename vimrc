@@ -18,8 +18,6 @@ set autoread                    "Reload files changed outside vim
 
 syntax on
 
-" Leader
-
 let mapleader = ","
 let maplocalleader = "\\"
 
