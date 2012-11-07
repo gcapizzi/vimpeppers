@@ -89,3 +89,41 @@ set scrolloff=8
 set sidescrolloff=15
 set sidescroll=1
 
+" Convenience mappings =======================================================
+
+" Make capitals behave
+nnoremap D d$
+nnoremap Y y$
+
+" It's 2012.
+noremap j gj
+noremap k gk
+
+" Easy buffer navigation
+noremap <C-h>     <C-w>h
+noremap <C-j>     <C-w>j
+noremap <C-k>     <C-w>k
+noremap <C-l>     <C-w>l
+noremap <leader>v <C-w>v
+
+" Substitute
+nnoremap <leader>s :%s//<left>
+
+" Toggle search highlighting
+map <Leader>h :set invhls <CR>
+
+" Fuck you, help key
+noremap  <F1> <NOP>
+inoremap <F1> <NOP>
+
+" Change Working Directory to that of the current file
+cmap cwd lcd %:p:h
+
+" Visual shifting (does not exit Visual mode)
+vnoremap < <gv
+vnoremap > >gv
+
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
