@@ -137,3 +137,51 @@ vnoremap > >gv
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+" Autocommands ===============================================================
+
+if has("autocmd")
+
+  set omnifunc=syntaxcomplete#Complete
+
+  augroup vimrcEx
+  au!
+
+  " Remove any trailing whitespace that is in the file
+  autocmd BufWrite * if ! &bin | :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")')) | endif
+
+  augroup END
+
+endif " has("autocmd")
+
+" Plugin settings ============================================================
+
+" NERD Tree
+
+map <Leader>n :NERDTreeToggle<cr>
+
+let NERDTreeHighlightCursorline=1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let NERDTreeChDirMode = 2
+let g:NERDTreeWinSize = 40
+
+" Supertab
+
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabLongestHighlight = 1
+
+" Ack
+
+map <leader>a :Ack!<space>
+
+" Powerline
+
+let g:Powerline_symbols = 'fancy'
+
+" CtrlP
+
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_extensions = ['tag']
+
+map <C-t> :CtrlPTag<CR>
+
