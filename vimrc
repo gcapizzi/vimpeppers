@@ -110,7 +110,7 @@ noremap <leader>v <C-w>v
 nnoremap <leader>s :%s//<left>
 
 " Toggle search highlighting
-map <Leader>h :set invhls <CR>
+map <Leader>h :nohlsearch<CR>
 
 " Fuck you, help key
 noremap  <F1> <NOP>
