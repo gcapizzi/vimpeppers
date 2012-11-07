@@ -116,6 +116,16 @@ map <Leader>h :nohlsearch<CR>
 noremap  <F1> <NOP>
 inoremap <F1> <NOP>
 
+" Disable those arrow keys!
+inoremap  <Up>     <NOP>
+noremap   <Up>     <NOP>
+inoremap  <Down>   <NOP>
+noremap   <Down>   <NOP>
+inoremap  <Left>   <NOP>
+noremap   <Left>   <NOP>
+inoremap  <Right>  <NOP>
+noremap   <Right>  <NOP>
+
 " Change Working Directory to that of the current file
 cmap cwd lcd %:p:h
 
