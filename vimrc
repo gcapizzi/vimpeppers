@@ -158,6 +158,7 @@ endif " has("autocmd")
 " NERD Tree
 
 map <Leader>n :NERDTreeToggle<cr>
+map <C-e> :NERDTreeToggle<CR>
 
 let NERDTreeHighlightCursorline=1
 let NERDTreeMinimalUI = 1
