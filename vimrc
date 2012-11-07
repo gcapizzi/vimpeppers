@@ -26,6 +26,7 @@ set autoread
 set backspace=indent,eol,start
 set cursorline
 set history=1000
+set laststatus=2
 set number
 set showcmd
 set showmode
