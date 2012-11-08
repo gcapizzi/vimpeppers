@@ -88,8 +88,8 @@ syntax on
 set background=dark
 set t_Co=256
 if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
-    colorscheme solarized
     let g:solarized_termcolors=256
+    colorscheme solarized
 endif
 
 " Scrolling ==================================================================
