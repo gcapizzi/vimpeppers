@@ -1,4 +1,4 @@
-A Vim distribution for my fellow colleagues @ [XPeppers](http://xpeppers.com).
+A Vim distribution for my fellow colleagues @ [XPeppers](http://www.xpeppers.com).
 
 To install it, use the bootstrap script:
 
