@@ -116,6 +116,11 @@ noremap <C-k>     <C-w>k
 noremap <C-l>     <C-w>l
 noremap <leader>v <C-w>v
 
+" Easy tab navigation
+
+map <S-H> gT
+map <S-L> gt
+
 " Substitute
 nnoremap <leader>s :%s//<left>
 
