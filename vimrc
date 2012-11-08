@@ -184,10 +184,6 @@ let g:SuperTabLongestHighlight = 1
 
 map <leader>a :Ack!<space>
 
-" Powerline
-
-let g:Powerline_symbols = 'fancy'
-
 " CtrlP
 
 let g:ctrlp_working_path_mode = 0
