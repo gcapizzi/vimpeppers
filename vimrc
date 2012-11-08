@@ -28,10 +28,13 @@ set backspace=indent,eol,start
 set cursorline
 set history=1000
 set laststatus=2
+set lazyredraw
 set number
 set showcmd
 set showmatch
 set showmode
+set title
+set ttyfast
 set visualbell
 
 " Leader
@@ -67,6 +70,7 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set expandtab
+set shiftround
 
 filetype plugin on
 filetype indent on
