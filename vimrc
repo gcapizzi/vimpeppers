@@ -187,3 +187,8 @@ let g:ctrlp_extensions = ['tag']
 
 map <C-t> :CtrlPTag<CR>
 
+" Local vimrc ================================================================
+
+if filereadable(expand("~/.vimrc.local"))
+    source ~/.vimrc.local
+endif
