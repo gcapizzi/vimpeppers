@@ -30,6 +30,7 @@ set history=1000
 set laststatus=2
 set number
 set showcmd
+set showmatch
 set showmode
 set visualbell
 
