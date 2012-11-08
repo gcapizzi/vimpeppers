@@ -20,6 +20,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'mileszs/ack.vim'
+Bundle 'msanders/snipmate.vim'
 
 " General Config =============================================================
 
