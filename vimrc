@@ -125,8 +125,9 @@ map <S-L> gt
 " Substitute
 nnoremap <leader>s :%s//<left>
 
-" Toggle search highlighting
+" Clear search highlighting
 map <Leader>h :nohlsearch<CR>
+map <C-l> :nohlsearch<CR>
 
 " Fuck you, help key
 noremap  <F1> <NOP>
@@ -173,7 +174,7 @@ endif " has("autocmd")
 
 " NERD Tree
 
-map <Leader>n :NERDTreeToggle<cr>
+map <Leader>n :NERDTreeToggle<CR>
 map <C-e> :NERDTreeToggle<CR>
 
 let NERDTreeHighlightCursorline=1
