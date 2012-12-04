@@ -154,6 +154,9 @@ vnoremap > >gv
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+" Save as root even if not root
+cmap w!! %!sudo tee > /dev/null %
+
 " Autocommands ===============================================================
 
 if has("autocmd")
