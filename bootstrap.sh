@@ -21,4 +21,4 @@ if [ ! -e $HOME/.vim/bundle/vundle ]; then
 fi
 
 echo "\n> update/install plugins using Vundle\n"
-vim +BundleInstall! +BundleClean +qall
+vim </dev/tty +BundleInstall! +BundleClean +qall
