@@ -15,6 +15,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
@@ -118,7 +119,6 @@ noremap <C-l>     <C-w>l
 noremap <leader>v <C-w>v
 
 " Easy tab navigation
-
 map <S-H> gT
 map <S-L> gt
 
@@ -168,6 +168,8 @@ if has("autocmd")
 
   " Remove any trailing whitespace that is in the file
   autocmd BufWrite * if ! &bin | :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")')) | endif
+
+  autocmd Filetype ruby set tabstop=2 shiftwidth=2 softtabstop=2
 
   augroup END
 
