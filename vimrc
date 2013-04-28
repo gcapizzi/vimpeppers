@@ -170,7 +170,10 @@ if has("autocmd")
   " Remove any trailing whitespace that is in the file
   autocmd BufWrite * if ! &bin | :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")')) | endif
 
+  " Filetype-specific settings
   autocmd Filetype ruby set tabstop=2 shiftwidth=2 softtabstop=2
+  autocmd BufRead *.html,*.htm set tabstop=2 shiftwidth=2 softtabstop=2 nowrap
+  autocmd BufRead *.txt set tabstop=2 shiftwidth=2 softtabstop=2
 
   augroup END
 
