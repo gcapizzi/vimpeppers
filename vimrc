@@ -120,13 +120,6 @@ nnoremap Y y$
 noremap j gj
 noremap k gk
 
-" Easy buffer navigation
-noremap <C-h>     <C-w>h
-noremap <C-j>     <C-w>j
-noremap <C-k>     <C-w>k
-noremap <C-l>     <C-w>l
-noremap <leader>v <C-w>v
-
 " Easy tab navigation
 map <S-H> gT
 map <S-L> gt
@@ -135,7 +128,6 @@ map <S-L> gt
 nnoremap <leader>s :%s//<left>
 
 " Clear search highlighting
-map <Leader>h :nohlsearch<CR>
 map <C-l> :nohlsearch<CR>
 
 " Fuck you, help key
@@ -192,7 +184,6 @@ runtime macros/matchit.vim
 
 " NERD Tree
 
-map <Leader>n :NERDTreeToggle<CR>
 map <C-e> :NERDTreeToggle<CR>
 
 let NERDTreeHighlightCursorline=1
