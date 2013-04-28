@@ -20,6 +20,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
+Bundle 'thoughtbot/vim-rspec'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-rails'
@@ -210,6 +211,12 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_extensions = ['tag']
 
 map <C-t> :CtrlPTag<CR>
+
+" Rspec.vim
+
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
 
 " Local vimrc ================================================================
 
