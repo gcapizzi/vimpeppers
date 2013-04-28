@@ -6,11 +6,16 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" Bundles
+" Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
+
+" Bundles
+Bundle 'Lokaltog/vim-powerline'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
+Bundle 'kien/ctrlp.vim'
+Bundle 'mileszs/ack.vim'
+Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-commentary'
@@ -19,9 +24,6 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'mileszs/ack.vim'
-Bundle 'msanders/snipmate.vim'
 
 " General Config =============================================================
 
