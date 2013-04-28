@@ -14,6 +14,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'ervandew/supertab'
 Bundle 'kien/ctrlp.vim'
+Bundle 'matchit.zip'
 Bundle 'mileszs/ack.vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
@@ -184,6 +185,10 @@ if has("autocmd")
 endif " has("autocmd")
 
 " Plugin settings ============================================================
+
+" Matchit.vim
+
+runtime macros/matchit.vim
 
 " NERD Tree
 
