@@ -163,6 +163,9 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " Save as root even if not root
 cmap w!! %!sudo tee > /dev/null %
 
+" Close QuickFix window
+map <leader>q :cclose<CR>
+
 " Autocommands ===============================================================
 
 if has("autocmd")
