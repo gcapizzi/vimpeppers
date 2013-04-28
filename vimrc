@@ -28,14 +28,19 @@ Bundle 'msanders/snipmate.vim'
 set autoread
 set backspace=indent,eol,start
 set cursorline
+set encoding=utf-8
 set hidden
 set history=1000
 set laststatus=2
 set lazyredraw
+set modelines=0
 set number
+set numberwidth=5
 set showcmd
 set showmatch
 set showmode
+set splitbelow
+set splitright
 set title
 set ttyfast
 set visualbell
@@ -79,6 +84,7 @@ filetype plugin on
 filetype indent on
 
 set list listchars=tab:»·,trail:·
+set showbreak=↪
 
 " Completion =================================================================
 
