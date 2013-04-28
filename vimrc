@@ -63,10 +63,6 @@ set smartcase
 
 " Persistent undo and backups ================================================
 
-silent !mkdir -p ~/.vim/tmp/undo > /dev/null 2>&1
-silent !mkdir -p ~/.vim/tmp/backup > /dev/null 2>&1
-silent !mkdir -p ~/.vim/tmp/swap > /dev/null 2>&1
-
 if has("persistent_undo")
     set undodir=~/.vim/tmp/undo
     set undoreload=10000
