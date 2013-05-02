@@ -212,6 +212,7 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_extensions = ['tag']
 
 map <C-t> :CtrlPTag<CR>
+map <C-b> :CtrlPBuffer<CR>
 
 " Rspec.vim
 
