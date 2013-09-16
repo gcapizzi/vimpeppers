@@ -12,7 +12,7 @@ Bundle 'gmarik/vundle'
 " Bundles
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'thinkpixellab/flatland', { 'rtp': 'Vim/' }
 Bundle 'ervandew/supertab'
 Bundle 'kien/ctrlp.vim'
 Bundle 'matchit.zip'
@@ -63,9 +63,9 @@ set smartcase
 " Persistent undo and backups ================================================
 
 if has("persistent_undo")
-    set undodir=~/.vim/tmp/undo
-    set undoreload=10000
-    set undofile
+  set undodir=~/.vim/tmp/undo
+  set undoreload=10000
+  set undofile
 endif
 
 set backupdir=~/.vim/tmp/backup
@@ -95,6 +95,12 @@ set wildmode=list:longest
 set wildmenu
 
 " Colors =====================================================================
+" 
+"  flatland / Vim / colors / flatland.vim
+"  if filereadable(expand("~/.vim/bundle/flatland/vim/colors/flatland.vim"))
+"     colorscheme flatland
+" 
+
 
 syntax on
 set background=dark
@@ -135,14 +141,14 @@ noremap  <F1> <NOP>
 inoremap <F1> <NOP>
 
 " Disable those arrow keys!
-inoremap  <Up>     <NOP>
-noremap   <Up>     <NOP>
-inoremap  <Down>   <NOP>
-noremap   <Down>   <NOP>
-inoremap  <Left>   <NOP>
-noremap   <Left>   <NOP>
-inoremap  <Right>  <NOP>
-noremap   <Right>  <NOP>
+" inoremap  <Up>     <NOP>
+" noremap   <Up>     <NOP>
+" inoremap  <Down>   <NOP>
+" noremap   <Down>   <NOP>
+" inoremap  <Left>   <NOP>
+" noremap   <Left>   <NOP>
+" inoremap  <Right>  <NOP>
+" noremap   <Right>  <NOP>
 
 " Change Working Directory to that of the current file
 cmap cwd lcd %:p:h
