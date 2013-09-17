@@ -100,8 +100,14 @@ syntax on
 set background=dark
 set t_Co=256
   
-if filereadable(expand("~/.vim/bundle/flatland/Vim/colors/flatland.vim"))
-  colorscheme flatland
+"if filereadable(expand("~/.vim/bundle/flatland/Vim/colors/flatland.vim"))
+"  let g:flatland_termcolors=256
+"  colorscheme flatland
+"endif
+
+if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
+  let g:solarized_termcolors=256
+  colorscheme solarized
 endif
 
 " Scrolling ==================================================================
