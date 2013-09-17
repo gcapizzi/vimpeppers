@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'thinkpixellab/flatland', { 'rtp': 'Vim/' }
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'ervandew/supertab'
 Bundle 'kien/ctrlp.vim'
 Bundle 'matchit.zip'
