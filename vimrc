@@ -95,19 +95,13 @@ set wildmode=list:longest
 set wildmenu
 
 " Colors =====================================================================
-" 
-"  flatland / Vim / colors / flatland.vim
-"  if filereadable(expand("~/.vim/bundle/flatland/vim/colors/flatland.vim"))
-"     colorscheme flatland
-" 
-
 
 syntax on
 set background=dark
 set t_Co=256
-if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
-    let g:solarized_termcolors=256
-    colorscheme solarized
+  
+if filereadable(expand("~/.vim/bundle/flatland/Vim/colors/flatland.vim"))
+  colorscheme flatland
 endif
 
 " Scrolling ==================================================================

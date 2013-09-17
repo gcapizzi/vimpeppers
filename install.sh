@@ -1,7 +1,5 @@
 #!/usr/bin/env sh
 
-endpath=
-
 echo "# vimpeppers installer"
 
 if [ -e "$HOME/.vimpeppers/.git" ]; then
@@ -31,4 +29,4 @@ echo "\033[1;32m✓ updating everything using vundle...\033[0m"
 
 vim </dev/tty +BundleInstall! +BundleClean +qall
 
-echo "\033[1;32m= done\033[0m"
+echo "\033[1;32m= done!\033[0m"
