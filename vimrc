@@ -210,6 +210,10 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 " map <Leader>a :call RunAllSpecs()<CR>
 
+" Vim Git Gutter
+
+let g:gitgutter_eager = 0
+
 " Local vimrc ================================================================
 
 if filereadable(expand("~/.vimrc.local"))
