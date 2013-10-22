@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'ivoputzer/vim-colors-flatland'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'ervandew/supertab'
 Bundle 'kien/ctrlp.vim'
 Bundle 'matchit.zip'
@@ -98,6 +99,16 @@ set showbreak=↪
 
 set wildmode=list:longest
 set wildmenu
+
+" Colors =====================================================================
+
+syntax on
+set background=dark
+set t_Co=256
+if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
+  let g:solarized_termcolors=256
+  colorscheme solarized
+endif
 
 " Scrolling ==================================================================
 
