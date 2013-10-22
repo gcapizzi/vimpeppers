@@ -13,13 +13,11 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'thinkpixellab/flatland', { 'rtp': 'Vim/' }
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'ervandew/supertab'
 Bundle 'kien/ctrlp.vim'
 Bundle 'matchit.zip'
 Bundle 'mileszs/ack.vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-endwise'
@@ -27,6 +25,12 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
+
+" Local bundles ==============================================================
+
+if filereadable(expand("~/.vimrc.bundles.local"))
+    source ~/.vimrc.bundles.local
+endif
 
 " General Config =============================================================
 
@@ -95,22 +99,6 @@ set showbreak=↪
 set wildmode=list:longest
 set wildmenu
 
-" Colors =====================================================================
-
-syntax on
-set background=dark
-set t_Co=256
-  
-"if filereadable(expand("~/.vim/bundle/flatland/Vim/colors/flatland.vim"))
-"  let g:flatland_termcolors=256
-"  colorscheme flatland
-"endif
-
-if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
-  let g:solarized_termcolors=256
-  colorscheme solarized
-endif
-
 " Scrolling ==================================================================
 
 set scrolloff=8
@@ -140,16 +128,6 @@ map <C-l> :nohlsearch<CR>
 " Fuck you, help key
 noremap  <F1> <NOP>
 inoremap <F1> <NOP>
-
-" Disable those arrow keys!
-" inoremap  <Up>     <NOP>
-" noremap   <Up>     <NOP>
-" inoremap  <Down>   <NOP>
-" noremap   <Down>   <NOP>
-" inoremap  <Left>   <NOP>
-" noremap   <Left>   <NOP>
-" inoremap  <Right>  <NOP>
-" noremap   <Right>  <NOP>
 
 " Change Working Directory to that of the current file
 cmap cwd lcd %:p:h
