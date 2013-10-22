@@ -12,7 +12,7 @@ Bundle 'gmarik/vundle'
 " Bundles
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'thinkpixellab/flatland', { 'rtp': 'Vim/' }
+Bundle 'ivoputzer/vim-colors-flatland'
 Bundle 'ervandew/supertab'
 Bundle 'kien/ctrlp.vim'
 Bundle 'matchit.zip'
