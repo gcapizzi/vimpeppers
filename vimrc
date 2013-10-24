@@ -125,9 +125,9 @@ nnoremap Y y$
 noremap j gj
 noremap k gk
 
-" Easy tab navigation
-map <S-H> gT
-map <S-L> gt
+" Easy tab navigation [shift+left] & [shift+right]
+map <S-Left> gT
+map <S-Right> gt
 
 " Substitute
 nnoremap <leader>s :%s//<left>
