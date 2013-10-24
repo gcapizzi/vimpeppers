@@ -11,7 +11,7 @@ Bundle 'gmarik/vundle'
 
 " Bundles
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'airblade/vim-gitgutter'
+Bundle 'mhinz/vim-signify'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'ervandew/supertab'
 Bundle 'kien/ctrlp.vim'
