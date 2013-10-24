@@ -219,6 +219,10 @@ map <Leader>l :call RunLastSpec()<CR>
 
 let g:gitgutter_eager = 0
 
+" Powerline
+
+let g:Powerline_symbols = 'unicode'
+
 " Local vimrc ================================================================
 
 if filereadable(expand("~/.vimrc.local"))
