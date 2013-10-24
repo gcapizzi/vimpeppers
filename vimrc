@@ -209,17 +209,6 @@ let g:ctrlp_extensions = ['tag']
 map <C-t> :CtrlPTag<CR>
 map <C-b> :CtrlPBuffer<CR>
 
-" Rspec.vim
-
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-" map <Leader>a :call RunAllSpecs()<CR>
-
-" Vim Git Gutter
-
-let g:gitgutter_eager = 0
-
 " Powerline
 
 let g:Powerline_symbols = 'unicode'
