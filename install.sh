@@ -26,7 +26,7 @@ if [ -e "$HOME/.vimpeppers/.git" ]; then
 
 else
 
-  git clone http://github.com/ivoputzer/vimpeppers.git "$HOME/.vimpeppers" >/dev/null 2>&1 || {
+  git clone https://github.com/ivoputzer/vimpeppers.git "$HOME/.vimpeppers" >/dev/null 2>&1 || {
 
     echo >&2 "\033[1;31m✗ unable to clone remote repository [github]...\033[0m\n= aborted!\033[0m"; exit 1; }
 
@@ -54,7 +54,7 @@ echo "\033[1;32m✓ temporary vim folders created...\033[0m"
 
 if [ ! -e $HOME/.vim/bundle/vundle ]; then
 
-  git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle >/dev/null 2>&1 || {
+  git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle >/dev/null 2>&1 || {
 
     echo >&2 "\033[1;31m✗ not able to clone and install vundle [github]...\033[0m\n= aborted!\033[0m"; exit 1; }
 
