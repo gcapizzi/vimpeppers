@@ -154,7 +154,15 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 cmap w!! %!sudo tee > /dev/null %
 
 " Close QuickFix window
-map <leader>q :cclose<CR>
+map <silent> <leader>q :cclose<CR>
+
+" Paste toggle
+
+map <silent> <leader>p :set paste!<CR>
+
+" Wrapping
+
+map <silent> <leader>w :set wrap!<CR>
 
 " Autocommands ===============================================================
 
