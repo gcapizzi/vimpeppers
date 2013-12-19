@@ -212,6 +212,10 @@ map <C-b> :CtrlPBuffer<CR>
 
 let g:Powerline_symbols = 'unicode'
 
+" Signify
+
+let g:signify_vcs_list = ['git']
+
 " Local vimrc ================================================================
 
 if filereadable(expand("~/.vimrc.local"))
