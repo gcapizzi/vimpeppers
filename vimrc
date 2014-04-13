@@ -24,6 +24,8 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-fugitive'
+Bundle 'AndrewRadev/splitjoin.vim'
+Bundle 'othree/html5.vim'
 
 " Local bundles ==============================================================
 
