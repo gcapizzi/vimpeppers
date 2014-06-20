@@ -210,9 +210,6 @@ map <leader>a :Ack!<space>
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_extensions = ['tag']
 
-map <C-t> :CtrlPTag<CR>
-map <C-b> :CtrlPBuffer<CR>
-
 " Powerline
 
 let g:Powerline_symbols = 'unicode'
