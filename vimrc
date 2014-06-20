@@ -210,10 +210,6 @@ map <leader>a :Ack!<space>
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_extensions = ['tag']
 
-" Powerline
-
-let g:Powerline_symbols = 'unicode'
-
 " Signify
 
 let g:signify_vcs_list = ['git']
