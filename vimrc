@@ -25,7 +25,10 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-fugitive'
 Bundle 'AndrewRadev/splitjoin.vim'
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'othree/html5.vim'
+Bundle 'sjl/gundo.vim'
 
 " Local bundles ==============================================================
 
