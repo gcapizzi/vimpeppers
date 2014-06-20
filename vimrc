@@ -217,8 +217,8 @@ let g:signify_vcs_list = ['git']
 " Airline
 
 " let g:airline_theme='powerlineish'
-let g:airline_left_sep='▶'
-let g:airline_right_sep='◀'
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 let g:airline_left_alt_sep='❯'
 let g:airline_right_alt_sep='❮'
 let g:airline_branch_prefix = '⚡'
