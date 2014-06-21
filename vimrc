@@ -57,6 +57,7 @@ set splitright
 set title
 set ttyfast
 set visualbell
+set clipboard=unnamed
 
 syntax on
 
