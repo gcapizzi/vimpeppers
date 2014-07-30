@@ -1,40 +1,41 @@
 set nocompatible
+filetype off
 
 " Vundle =====================================================================
 
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Let Vundle manage Vundle
 Bundle 'gmarik/Vundle.vim'
 
-" Bundles
-Bundle 'bling/vim-airline'
-Bundle 'mhinz/vim-signify'
-Bundle 'ervandew/supertab'
-Bundle 'kien/ctrlp.vim'
-Bundle 'matchit.zip'
-Bundle 'mileszs/ack.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-fugitive'
-Bundle 'AndrewRadev/splitjoin.vim'
-Bundle 'kana/vim-textobj-user'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'othree/html5.vim'
-Bundle 'sjl/gundo.vim'
+" Plugins
+Plugin 'bling/vim-airline'
+Plugin 'mhinz/vim-signify'
+Plugin 'ervandew/supertab'
+Plugin 'kien/ctrlp.vim'
+Plugin 'matchit.zip'
+Plugin 'mileszs/ack.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-fugitive'
+Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'othree/html5.vim'
+Plugin 'sjl/gundo.vim'
 
-" Local bundles ==============================================================
-
-if filereadable(expand("~/.vimrc.bundles.local"))
-    source ~/.vimrc.bundles.local
+" Local plugins
+if filereadable(expand("~/.vimrc.plugins.local"))
+    source ~/.vimrc.plugins.local
 endif
+
+call vundle#end()
 
 " General Config =============================================================
 
