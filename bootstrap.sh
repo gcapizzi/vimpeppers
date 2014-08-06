@@ -20,10 +20,10 @@ mkdir -p $HOME/.vim/tmp/undo
 mkdir -p $HOME/.vim/tmp/backup
 mkdir -p $HOME/.vim/tmp/swap
 
-if [ ! -e $HOME/.vim/bundle/vundle ]; then
+if [ ! -e $HOME/.vim/bundle/Vundle.vim ]; then
     echo "> install Vundle\n"
-    git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
+    git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 fi
 
 echo "\n> update/install plugins using Vundle\n"
-vim </dev/tty +BundleInstall! +BundleClean +qall
+vim </dev/tty +PluginInstall +PluginClean +qall
