@@ -109,7 +109,7 @@ set wildmenu
 
 " Scrolling ==================================================================
 
-set scrolloff=8
+set scrolloff=3
 set sidescrolloff=15
 set sidescroll=1
 
