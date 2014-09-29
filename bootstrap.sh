@@ -12,7 +12,7 @@ else
     git clone http://github.com/gcapizzi/vimpeppers.git $endpath
 fi
 
-echo "> set up symlink\n"
+echo "\n> set up symlink\n"
 ln -sf $endpath/vimrc $HOME/.vimrc
 
 echo "> create Vim folders"
