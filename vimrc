@@ -28,6 +28,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'kana/vim-textobj-user'
 Plugin 'othree/html5.vim'
+Plugin 'Julian/vim-textobj-variable-segment'
 Plugin 'sjl/gundo.vim'
 
 " Local plugins
