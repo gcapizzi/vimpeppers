@@ -30,6 +30,7 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'othree/html5.vim'
 Plugin 'Julian/vim-textobj-variable-segment'
 Plugin 'sjl/gundo.vim'
+Plugin 'StanAngeloff/php.vim'
 
 " Local plugins
 if filereadable(expand("~/.vimrc.plugins.local"))
