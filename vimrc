@@ -117,8 +117,7 @@ set sidescroll=1
 
 " Convenience mappings =======================================================
 
-" Make capitals behave
-nnoremap D d$
+" Make Y behave
 nnoremap Y y$
 
 " It's 2012.
