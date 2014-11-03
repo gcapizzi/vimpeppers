@@ -156,11 +156,9 @@ cmap w!! %!sudo tee > /dev/null %
 map <silent> <leader>q :cclose<CR>
 
 " Paste toggle
-
 map <silent> <leader>p :set paste!<CR>
 
 " Wrapping
-
 map <silent> <leader>w :set wrap!<CR>
 
 " Autocommands ===============================================================
@@ -219,7 +217,6 @@ let g:signify_vcs_list = ['git']
 
 " Airline
 
-" let g:airline_theme='powerlineish'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_left_alt_sep='❯'
