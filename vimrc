@@ -151,9 +151,6 @@ vnoremap > >gv
 nmap <silent> <leader>ev :tabe $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
-" Save as root even if not root
-cmap w!! %!sudo tee > /dev/null %
-
 " Close QuickFix window
 map <silent> <leader>q :cclose<CR>
 
