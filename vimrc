@@ -126,6 +126,9 @@ nnoremap Y y$
 noremap j gj
 noremap k gk
 
+" Easy paragraph formatting
+nnoremap Q gqip
+
 " Easy tab navigation
 map <S-H> gT
 map <S-L> gt
