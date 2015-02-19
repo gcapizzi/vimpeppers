@@ -122,7 +122,7 @@ set sidescroll=1
 " Make Y behave
 nnoremap Y y$
 
-" It's 2014.
+" It's 2015.
 noremap j gj
 noremap k gk
 
