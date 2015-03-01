@@ -59,6 +59,7 @@ set title
 set ttyfast
 set visualbell
 set clipboard=unnamed
+set colorcolumn=80
 
 syntax on
 
