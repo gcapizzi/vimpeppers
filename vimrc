@@ -140,17 +140,6 @@ map <C-l> :nohlsearch<CR>
 noremap  <F1> <NOP>
 inoremap <F1> <NOP>
 
-" Change Working Directory to that of the current file
-cmap cwd lcd %:p:h
-
-" Visual shifting (does not exit Visual mode)
-vnoremap < <gv
-vnoremap > >gv
-
-" Quickly edit/reload the vimrc file
-nmap <silent> <leader>ev :tabe $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
-
 " Close QuickFix window
 map <silent> <leader>q :cclose<CR>
 
