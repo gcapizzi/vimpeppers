@@ -160,6 +160,10 @@ map <silent> <leader>p :set paste!<CR>
 " Wrapping
 map <silent> <leader>w :set wrap!<CR>
 
+" Recover from accidental Ctrl-U/Ctrl-W
+inoremap <C-U> <C-G>u<C-U>
+inoremap <C-W> <C-G>u<C-W>
+
 " Autocommands ===============================================================
 
 if has("autocmd")
