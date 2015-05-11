@@ -131,7 +131,7 @@ map <S-H> gT
 map <S-L> gt
 
 " Substitute
-nnoremap <leader>x :%s//<left>
+nnoremap <leader>s :%s//<left>
 
 " Clear search highlighting
 map <C-l> :nohlsearch<CR>
