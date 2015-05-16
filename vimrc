@@ -25,7 +25,7 @@ Plug 'Julian/vim-textobj-variable-segment'
 Plug 'sjl/gundo.vim'
 
 " Local plugins
-if filereadable(expand("~/.vimrc.plugins.local"))
+if filereadable(expand('~/.vimrc.plugins.local'))
     source ~/.vimrc.plugins.local
 endif
 
@@ -70,7 +70,7 @@ set smartcase
 
 " Persistent undo and backups ================================================
 
-if has("persistent_undo")
+if has('persistent_undo')
     set undodir=~/.vim/tmp/undo
     set undoreload=10000
     set undofile
@@ -149,7 +149,7 @@ inoremap <C-W> <C-G>u<C-W>
 
 " Autocommands ===============================================================
 
-if has("autocmd")
+if has('autocmd')
 
   set omnifunc=syntaxcomplete#Complete
 
@@ -166,7 +166,7 @@ if has("autocmd")
 
   augroup END
 
-endif " has("autocmd")
+endif " has('autocmd')
 
 " Plugin settings ============================================================
 
@@ -215,6 +215,6 @@ let g:airline_symbols.branch = '⚡'
 
 " Local vimrc ================================================================
 
-if filereadable(expand("~/.vimrc.local"))
+if filereadable(expand('~/.vimrc.local'))
     source ~/.vimrc.local
 endif
