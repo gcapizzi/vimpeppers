@@ -20,10 +20,11 @@ mkdir -p $HOME/.vim/tmp/undo
 mkdir -p $HOME/.vim/tmp/backup
 mkdir -p $HOME/.vim/tmp/swap
 
-if [ ! -e $HOME/.vim/bundle/Vundle.vim ]; then
-    echo "> install Vundle\n"
-    git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+if [ ! -e $HOME/.vim/autoload/plug.vim ]; then
+    echo "> install vim-plug\n"
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 
-echo "\n> update/install plugins using Vundle\n"
-vim </dev/tty +PluginInstall +PluginClean +qall
+echo "\n> install plugins using vim-plug\n"
+vim </dev/tty +PlugInstall +PlugClean +qall

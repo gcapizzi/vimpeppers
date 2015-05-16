@@ -1,41 +1,35 @@
 set nocompatible
-filetype off
 
-" Vundle =====================================================================
+" Plugins ====================================================================
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/bundle')
 
-" Let Vundle manage Vundle
-Plugin 'gmarik/Vundle.vim'
-
-" Plugins
-Plugin 'bling/vim-airline'
-Plugin 'mhinz/vim-signify'
-Plugin 'ervandew/supertab'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'matchit.zip'
-Plugin 'mileszs/ack.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-eunuch'
-Plugin 'scrooloose/syntastic'
-Plugin 'AndrewRadev/splitjoin.vim'
-Plugin 'kana/vim-textobj-user'
-Plugin 'Julian/vim-textobj-variable-segment'
-Plugin 'sjl/gundo.vim'
+Plug 'bling/vim-airline'
+Plug 'mhinz/vim-signify'
+Plug 'ervandew/supertab'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'matchit.zip'
+Plug 'mileszs/ack.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-eunuch'
+Plug 'scrooloose/syntastic'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'kana/vim-textobj-user'
+Plug 'Julian/vim-textobj-variable-segment'
+Plug 'sjl/gundo.vim'
 
 " Local plugins
 if filereadable(expand("~/.vimrc.plugins.local"))
     source ~/.vimrc.plugins.local
 endif
 
-call vundle#end()
+call plug#end()
 
 " General Config =============================================================
 
