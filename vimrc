@@ -4,7 +4,8 @@ set nocompatible
 
 call plug#begin('~/.vim/bundle')
 
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'mhinz/vim-signify'
 Plug 'ervandew/supertab'
 Plug 'ctrlpvim/ctrlp.vim'
